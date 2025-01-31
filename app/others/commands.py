@@ -6,7 +6,6 @@ user_commands = [
     BotCommand("/start", "start bot"),
     BotCommand("/help", "how it works?"),
     BotCommand("/lang", "change language"),
-    BotCommand("/settings", "open bot settings"),
 ]
 
 admin_commands = [
