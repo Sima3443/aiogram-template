@@ -1,10 +1,10 @@
-
 # 🚀 Getting Started
 
 ## 🛠️ Technologies Stack
-- `aiogram 2`
+- `Aiogram2`
 - `i18n`
-- `peewee`
+- `Redis`
+- `Peewee`
 - `PostgreSQL \ Sqlite`
 
 ---
@@ -15,7 +15,7 @@
 First, clone the repository and navigate to its directory:
 
 ```bash
-git clone https://github.com/devvsima/aiogram-peewee-template.git
+git clone https://github.com/devvsima/aiogram2-template.git
 cd tgbot
 ```
 
@@ -84,6 +84,27 @@ Set the database connection parameters:
 - `DB_PORT` - database port (default = `5432`)
 - `DB_USER` - database user
 - `DB_PASS` - database password
+
+### 6. Configuring Redis
+
+Redis is used for caching and storing session data. Set up the Redis connection parameters in the `.env` file:
+
+- `REDIS_HOST` - Redis server host (default: `localhost`)
+- `REDIS_PORT` - Redis server port (default: `6379`)
+- `REDIS_DB` - Redis database index (default: `5`)
+- `REDIS_URL` - Redis connection URL (optional)
+
+Example:
+```bash
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_DB=5
+```
+
+Ensure that Redis is installed and running before launching the bot. You can start Redis with:
+```bash
+redis-server
+```
 
 ---
 

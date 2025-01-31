@@ -1,5 +1,5 @@
 from loader import dp
-from .admin import Admin
+from .admin import IsAdmin
 
-if __name__ == 'bot.filters':
-    dp.filters_factory.bind(Admin)
+if __name__ == "bot.filters":
+    dp.filters_factory.bind(IsAdmin)

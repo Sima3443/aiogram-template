@@ -23,7 +23,7 @@ from data.config import I18N_DOMAIN, LOCALES_DIR
 class ACLMiddleware(I18nMiddleware):
     async def get_user_locale(self, action: str, args: list[Message, dict[str]]):
         *_, data = args
-        user = data['user']
+        user = data["user"]
 
         return user.language
 
@@ -31,7 +31,7 @@ class ACLMiddleware(I18nMiddleware):
         self.ctx_locale.set(locale)
 
     async def trigger(self, action, args):
-        if 'update' not in action and 'error' not in action and action.startswith('process'):
+        if "update" not in action and "error" not in action and action.startswith("process"):
             locale = await self.get_user_locale(action, args)
             self.set_user_locale(locale)
             return True

@@ -1,12 +1,10 @@
-from aiogram import types, Dispatcher
+from aiogram import types
 from aiogram.dispatcher.filters import Command
 
-from loader import dp, _
-from app.filters.admin import Admin
+from app.filters.admin import IsAdmin
+from loader import _, dp
 
 
-@dp.message_handler(Admin(), Command("admin"))
+@dp.message_handler(IsAdmin(), Command("admin"))
 async def _admin_command(message: types.Message):
-    await message.answer(
-        text=_("You admin!")
-    )
+    await message.answer(_("You admin!"))

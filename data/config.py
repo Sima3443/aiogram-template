@@ -6,18 +6,27 @@ DIR = Path(__file__).absolute().parent.parent
 env = Env()
 env.read_env()
 
-#  tgbot
-TG_TOKEN = env.str("TOKEN", default=None)
-ADMINS = env.list("ADMINS", default=None, subcast=int)
-RATE_LIMIT = env.int("RATE_LIMIT", default=5)
+# ---< Telegram bot >---
+TG_TOKEN: str = env.str("TOKEN", default=None)
+ADMINS: list = env.list("ADMINS", default=None, subcast=int)
+SKIP_UPDATES: bool = env.bool("SKIP_UPDATES", default=False)
 
-# db
-DB_NAME = env.str("DB_NAME", default=None)
-DB_HOST = env.str("DB_HOST", default="localhost")
-DB_PORT = env.int("DB_PORT", default=5432)
-DB_USER = env.str("DB_USER", default=None)
-DB_PASS = env.str("DB_PASS", default=None)
+# ---< Database >---
+DB_NAME: str = env.str("DB_NAME", default=None)
+DB_HOST: str = env.str("DB_HOST", default="localhost")
+DB_PORT: int = env.int("DB_PORT", default=5432)
+DB_USER: str = env.str("DB_USER", default="postgres")
+DB_PASS: str = env.str("DB_PASS", default="postgres")
 
-I18N_DOMAIN = 'bot'
-LOCALES_DIR = f'{DIR}/data/locales'
+# ---< Redis >---
+REDIS_HOST: str = env.str("REDIS_HOST", default=None)
+REDIS_PORT: int = env.int("REDIS_PORT", default=6379)
+REDIS_DB: int = env.int("REDIS_DB", default=5)
 
+REDIS_URL: str = env.str("RD_URI", default=None)
+
+# ---< Other >---
+I18N_DOMAIN = "bot"
+
+IMAGES_DIR = rf"{DIR}/images"
+LOCALES_DIR = f"{DIR}/data/locales"

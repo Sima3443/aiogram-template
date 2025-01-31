@@ -1,17 +1,22 @@
 from aiogram.types import (
-    ReplyKeyboardRemove,
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
 from loader import _
 
 
-async def base_ikb():
+def lang_ikb() -> InlineKeyboardMarkup:
     ikb = InlineKeyboardMarkup(
         resize_keyboard=True,
         inline_keyboard=[
             [
-                InlineKeyboardButton(text="click", callback_data="callback"),
+                InlineKeyboardButton(text="Русский", callback_data="ru"),
+            ],
+            [
+                InlineKeyboardButton(text="Українська", callback_data="uk"),
+            ],
+            [
+                InlineKeyboardButton(text="English", callback_data="en"),
             ],
         ],
     )
