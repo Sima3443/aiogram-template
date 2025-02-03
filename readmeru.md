@@ -1,13 +1,9 @@
-# 🚀 Начало работы
+# Aiogram2 peewee template
 
-## 🛠️ Стек технологий
-- `Aiogram2`
+- `Aiogram 2`
 - `i18n`
-- `Redis`
-- `Peewee`
-- `PostgreSQL \ Sqlite`
-
----
+- ORM: `Peewee`
+- Database: `MongoDB, Redis`
 
 ## 📥 Как установить?
 
