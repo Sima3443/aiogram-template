@@ -1,40 +1,71 @@
-# Ukrainian translations for bot.
+# English translations for PROJECT.
 # Copyright (C) 2024 ORGANIZATION
-# This file is distributed under the same license as the bot project.
+# This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bot VERSION\n"
+"Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-01-31 18:44+0200\n"
-"PO-Revision-Date: 2024-09-09 21:16+0300\n"
+"POT-Creation-Date: 2025-02-01 15:02+0200\n"
+"PO-Revision-Date: 2024-09-07 14:40+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
 "Language-Team: uk <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app/handlers/admin/admin_panel.py:10
-msgid "You admin!"
-msgstr "Ти адмін!"
+#: app/handlers/msg_text.py:11
+msgid "👋, <a href='tg://user?id={}'>{}</a>"
+msgstr ""
 
-#: app/handlers/user/help.py:10
-msgid "Help 🆘"
-msgstr "Допомога 🆘"
+#: app/handlers/msg_text.py:15
+msgid "Bot Info:"
+msgstr "Інформація про бота:"
 
-#: app/handlers/user/language.py:16
+#: app/handlers/msg_text.py:19
+msgid ""
+"Invited users: <b>{}</b>\n"
+"\n"
+"Link for friends:\n"
+"<code>https://t.me/{}?start={}</code>"
+msgstr ""
+"Запрошені користувачі: <b>{}</b>\n"
+"\n"
+"Посилання для друзів:\n"
+"<code>https://t.me/{}?start={}</code>"
+
+#: app/handlers/msg_text.py:25
+msgid "You're the administrator!"
+msgstr "Ви адміністратор!"
+
+#: app/handlers/msg_text.py:29
 msgid "Select the language you want to switch to: 🌐"
 msgstr "Виберіть мову, на яку ви хочете переключитися: 🌐"
 
-#: app/handlers/user/language.py:25
+#: app/handlers/msg_text.py:33
 msgid "Your language has been successfully changed! ✅"
 msgstr "Вашу мову успішно змінено! ✅"
 
-#: app/handlers/user/start.py:9
-msgid "👋, <a href='tg://user?id={}'>{}</a>"
-msgstr ""
+#: app/others/commands.py:8
+msgid "start chat"
+msgstr "почати чат"
+
+#: app/others/commands.py:9
+msgid "change language"
+msgstr "змінити мову"
+
+#: app/others/commands.py:10
+msgid "bot description"
+msgstr "опис бота"
+
+#: app/others/commands.py:11
+msgid "referal system"
+msgstr "реферальна система"
+
+#: app/others/commands.py:21
+msgid "admin panel"
+msgstr "адмін панель"

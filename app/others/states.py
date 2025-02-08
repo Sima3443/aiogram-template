@@ -1,5 +1,5 @@
-from aiogram.dispatcher.filters.state import StatesGroup, State
+from aiogram.fsm.state import State, StatesGroup
 
 
-class LikeResponse(StatesGroup):
-    response = State()
+class DefaultState(StatesGroup):
+    waiting = State()

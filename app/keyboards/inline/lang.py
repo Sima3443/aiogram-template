@@ -2,7 +2,6 @@ from aiogram.types import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
-from loader import _
 
 
 def lang_ikb() -> InlineKeyboardMarkup:

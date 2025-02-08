@@ -1,7 +1,6 @@
-# 🚀 Getting Started
+# Aiogram peewee template
 
-## 🛠️ Technologies Stack
-- `Aiogram2`
+- `Aiogram 3`
 - `i18n`
 - `Redis`
 - `Peewee`
@@ -15,7 +14,7 @@
 First, clone the repository and navigate to its directory:
 
 ```bash
-git clone https://github.com/devvsima/aiogram2-template.git
+git clone https://github.com/devvsima/aiogram-peewee-template.git
 cd tgbot
 ```
 

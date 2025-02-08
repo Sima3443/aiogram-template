@@ -2,12 +2,14 @@
 .fleet
 .vscode
 .venv
-
-.sqlite
+.github
 
 **/__pycache__
 
 **.sqlite
 **.sqlite3
+**.json
 **/.env
 **/logs
+**/invites_per_user.png
+**/registration_graph.png

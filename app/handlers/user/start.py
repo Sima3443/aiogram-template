@@ -1,10 +1,11 @@
 from aiogram import types
-from aiogram.dispatcher.filters import CommandStart
+from aiogram.filters import CommandStart
+from aiogram.filters.state import StateFilter
 
-from loader import _, dp
+from app.routers import start_router
 
 
-@dp.message_handler(CommandStart())
-async def _start_command(message: types.Message):
-    text = _("👋, <a href='tg://user?id={}'>{}</a>")
+@start_router.message(CommandStart(), StateFilter(None))
+async def _start_command(message: types.Message) -> None:
+    text = "👋, <a href='tg://user?id={}'>{}</a>"
     await message.answer(text.format(message.from_user.id, message.from_user.full_name))

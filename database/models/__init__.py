@@ -1,5 +1,5 @@
-from .users import Users
 from ..connect import db
 
+from .users import Users
 
 db.create_tables([Users])

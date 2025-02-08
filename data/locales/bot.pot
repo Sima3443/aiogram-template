@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bot VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-01-31 18:44+0200\n"
+"POT-Creation-Date: 2025-02-01 15:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,51 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app/handlers/admin/admin_panel.py:10
-msgid "You admin!"
+#: app/handlers/msg_text.py:11
+msgid "👋, <a href='tg://user?id={}'>{}</a>"
 msgstr ""
 
-#: app/handlers/user/help.py:10
-msgid "Help 🆘"
+#: app/handlers/msg_text.py:15
+msgid "Bot Info:"
 msgstr ""
 
-#: app/handlers/user/language.py:16
+#: app/handlers/msg_text.py:19
+msgid ""
+"Invited users: <b>{}</b>\n"
+"\n"
+"Link for friends:\n"
+"<code>https://t.me/{}?start={}</code>"
+msgstr ""
+
+#: app/handlers/msg_text.py:25
+msgid "You're the administrator!"
+msgstr ""
+
+#: app/handlers/msg_text.py:29
 msgid "Select the language you want to switch to: 🌐"
 msgstr ""
 
-#: app/handlers/user/language.py:25
+#: app/handlers/msg_text.py:33
 msgid "Your language has been successfully changed! ✅"
 msgstr ""
 
-#: app/handlers/user/start.py:9
-msgid "👋, <a href='tg://user?id={}'>{}</a>"
+#: app/others/commands.py:8
+msgid "start chat"
+msgstr ""
+
+#: app/others/commands.py:9
+msgid "change language"
+msgstr ""
+
+#: app/others/commands.py:10
+msgid "bot description"
+msgstr ""
+
+#: app/others/commands.py:11
+msgid "referal system"
+msgstr ""
+
+#: app/others/commands.py:21
+msgid "admin panel"
 msgstr ""
 

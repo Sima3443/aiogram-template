@@ -1,14 +1,14 @@
-# Russian translations for bot.
+# Russian translations for PROJECT.
 # Copyright (C) 2024 ORGANIZATION
-# This file is distributed under the same license as the bot project.
+# This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bot VERSION\n"
+"Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-01-31 18:44+0200\n"
-"PO-Revision-Date: 2024-09-09 21:16+0300\n"
+"POT-Creation-Date: 2025-02-01 15:02+0200\n"
+"PO-Revision-Date: 2024-09-07 14:40+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -19,22 +19,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app/handlers/admin/admin_panel.py:10
-msgid "You admin!"
-msgstr "Ты админ!"
+#: app/handlers/msg_text.py:11
+msgid "👋, <a href='tg://user?id={}'>{}</a>"
+msgstr ""
 
-#: app/handlers/user/help.py:10
-msgid "Help 🆘"
-msgstr "Помощь 🆘"
+#: app/handlers/msg_text.py:15
+msgid "Bot Info:"
+msgstr "Информация о боте:"
 
-#: app/handlers/user/language.py:16
+#: app/handlers/msg_text.py:19
+msgid ""
+"Invited users: <b>{}</b>\n"
+"\n"
+"Link for friends:\n"
+"<code>https://t.me/{}?start={}</code>"
+msgstr ""
+"Приглашенные пользователи: <b>{}</b>\n"
+"\n"
+"Ссылка для друзей:\n"
+"<code>https://t.me/{}?start={}</code>"
+
+#: app/handlers/msg_text.py:25
+msgid "You're the administrator!"
+msgstr "Вы администратор!"
+
+#: app/handlers/msg_text.py:29
 msgid "Select the language you want to switch to: 🌐"
 msgstr "Выберите язык, на который вы хотите переключиться: 🌐"
 
-#: app/handlers/user/language.py:25
+#: app/handlers/msg_text.py:33
 msgid "Your language has been successfully changed! ✅"
-msgstr "Ваш язык успешно изменён! ✅""
+msgstr "Ваш язык был успешно изменен! ✅"
 
-#: app/handlers/user/start.py:9
-msgid "👋, <a href='tg://user?id={}'>{}</a>"
-msgstr ""
+#: app/others/commands.py:8
+msgid "start chat"
+msgstr "начать чат"
+
+#: app/others/commands.py:9
+msgid "change language"
+msgstr "изменить язык"
+
+#: app/others/commands.py:10
+msgid "bot description"
+msgstr "описание бота"
+
+#: app/others/commands.py:11
+msgid "referal system"
+msgstr "реферальная система"
+
+#: app/others/commands.py:21
+msgid "admin panel"
+msgstr "админ панель"
